@@ -1,16 +1,17 @@
-# This is a sample Python script.
+while True:
+    число1 = float(input("Введіть перше число: "))
+    число2 = float(input("Введіть друге число: "))
+    число3 = float(input("Введіть третє число: "))
+    опція = input("Виберіть опцію (сума/добуток): ")
+    сума = число1 + число2 + число3
+    добуток = число1 * число2 * число3
+    if опція == "сума":
+        print(f"Сума трьох чисел: {сума}")
+    elif опція == "добуток":
+        print(f"Добуток трьох чисел: {добуток}")
+    else:
+        print("Невірна опція. Будь ласка, виберіть 'сума' або 'добуток'.")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    продовжити = input("Бажаєте продовжити? (так/ні): ")
+    if продовжити.lower() != 'так':
+        break
